@@ -1,0 +1,9 @@
+1) Opening up django admin commands 
+
+	django-admin
+
+2) Running django admin commands 
+
+	django-adming <select_command> <provide_name_if_needed> 
+
+	
