@@ -18,7 +18,9 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', include('blog.urls')),
+    path('', include('blog.urls')),
     # Delete the blog if you want your homepage to be blog in other words lave the path empty
-    
+
 ]
+
+
