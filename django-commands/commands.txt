@@ -6,4 +6,11 @@
 
 	django-adming <select_command> <provide_name_if_needed> 
 
-	
+3) Running the server 
+
+	python manage.py runserver
+
+4) Creating ann app (You need to be in manage.py section in order to create an new app like blog, checkout etc...)
+
+	python manage.py startapp <name_of_the_app> 
+
