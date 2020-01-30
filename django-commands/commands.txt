@@ -14,3 +14,14 @@
 
 	python manage.py startapp <name_of_the_app> 
 
+5) Creating an admin user you need to create an database before using this
+
+	python manage.py createsuperuser 
+
+	Before above command you need to take the below steps first
+
+	i) python manage.py makemigrations 
+
+	ii) python manage.py migrate 
+
+6) 
