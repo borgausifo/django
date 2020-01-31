@@ -116,11 +116,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # Part 8, 15:37
+MEDIA_URL = '/media/'
+
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 # Added later for rerouting the user to home normall it looks for accounts/profile
 LOGIN_REDIRECT_URL = 'blog-home'
 
 LOGIN_URL = 'login'
+
+
 
 
