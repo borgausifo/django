@@ -24,4 +24,47 @@
 
 	ii) python manage.py migrate 
 
-6) 
+6) Viewing the sql code 
+
+	python manage.py sqlmigrate <name> <migration_number> 
+
+Note: Migrations are usefull because it allows us to make changes to our database even after it's created and data in that database so if we didn't have way to run migrations
+then we would have to run some compilicated SQL code to update our database structure so it didn't mess with the current data but with migtrations we can simply make whatever
+changes we need run make migrations and then run "migrate" and it will make all of those changfes for us.
+
+7) Django interactive shell for models
+
+	python manage.py shell
+
+8) Django SHell getting users
+	
+	from blog.models import Post 
+	from django.contrib.auth.models import User
+
+	User.objects.all()
+	User.objects.first()
+	User.objects.last()
+
+	User.objects.filter(username='Borga')
+	user = User.objects.filter(username='Borga').first()
+
+	user.id
+	user.pk (primary key)
+
+	user = User.objects.get(id=1)
+
+9) Saving to db
+
+	post_1.save() 
+
+10) Getting all of the post that the user is created 
+
+	user.post_set
+
+	user.post_set.all()
+
+	user.post_set.create(title='Blog 3', content = 'Third Post Content') _---> creating an post 
+
+11) Django bootstrap like forms
+
+	pip install django-crispy-forms
