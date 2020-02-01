@@ -68,3 +68,15 @@ changes we need run make migrations and then run "migrate" and it will make all 
 11) Django bootstrap like forms
 
 	pip install django-crispy-forms
+
+12) Using pagination 
+	
+	from Django.core.paginator import Paginator
+	post = post = ['1', '2', '3', '4', '5']
+	p = Paginator(post, 2) --> this will create 3 page with 2 blogs inside 
+	p1 = p.page(1) --> This will assign p1 to page 1 of 3 result will be 1 
+	p1.number --> This will give us the page number which is 1 
+	p1.object_list --> This will give list of objects on that page -->  ['1', '2']
+	p1.has_previous() --> Checking if there is previous page it will give boolean 
+	p1.has_next() --> Opposite of above
+	p1.next_page_number() --> Will give the next page number 
